@@ -1,1 +1,30 @@
-
+## 2.2 - Konsep Dasar Java
+### 2.2.1 - Pengertian
+### 2.2.2 - Fungsi
+### 2.2.3 - Perbedaan dengan Bahasa Pemograman yang Lain
+### 2.2.4 - Dasar-Dasar Bahasa Pemograman Java
+1. **Sintaks & Output**
+2. **Variabel, Identifier, dan Operator**
+3. **Tipe Data**
+   1. Primitive
+      1. Byte
+      2. Short
+      3. Integer
+      4. Long
+      5. Float
+      6. Double
+      7. Boolean
+      8. Char
+   2. Non-Primitive
+      1. String
+4. **Type Casting**
+5. **Conditioning**
+   1. If-Else
+      1. If
+      2. Else If
+      3. Short Hand If
+   2. Switch
+6. **Loop**
+   1. While Loop
+   2. For Loop
+7. **Array**
