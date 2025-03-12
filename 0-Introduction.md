@@ -28,8 +28,8 @@ Materi yang akan diajarkan selama praktikum meliputi:
 
 | Pertemuan | Materi |
 | --------- | ------- |
-| Pertemuan 1 | [Introduction](Introduction.md) |
-| Pertemuan 2 | [lorem](link) |
+| Pertemuan 1 | [Introduction](0-Introduction.md) |
+| Pertemuan 2 | [1-Perkenalan](1-Perkenalan) |
 | Pertemuan 3 | [lorem](link) |
 | Pertemuan 4 | [lorem](link) |
 | Pertemuan 5 | [lorem](link) |
