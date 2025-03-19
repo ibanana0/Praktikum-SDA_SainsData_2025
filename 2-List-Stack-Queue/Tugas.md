@@ -19,4 +19,5 @@ Buatlah suatu program Java sederhana untuk membantu manajemen sebuah toko buku. 
 #### Informasi Tambahan
 - Gunakan bahasa pemrograman Java.
 - Pastikan kode mudah dibaca, dengan komentar yang menjelaskan fungsi utama.
+- Buatlah sekreatif mungkin.
 - Kumpulkan kode kalian dalam satu file dengan format A_NIM_NamaLengkap.java ==> A_L0123034_BagasRizkiGunardi.java (tanpa spasi)
