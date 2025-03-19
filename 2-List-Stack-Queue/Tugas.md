@@ -2,7 +2,7 @@
 Buatlah suatu program Java sederhana untuk membantu manajemen sebuah toko buku. Program ini akan menggunakan tiga jenis struktur data: List, Stack, dan Queue. Setiap struktur data akan digunakan untuk sistem manajemen toko buku ini.
 
 ### List: Katalog Buku
-- Implementasikan sebuah `List` untuk menyimpan katalog buku yang tersedia di toko. Setiap buku memiliki atribut seperti judul, penulis, ISBN, dan harga.
+- Implementasikan sebuah `List` untuk menyimpan katalog buku yang tersedia di toko.
 - Buatlah fungsi untuk menambahkan buku baru ke dalam katalog, menghapus buku berdasarkan ISBN, dan mencari buku berdasarkan judul atau penulis.
 - Tampilkan seluruh katalog buku yang tersedia.
 
