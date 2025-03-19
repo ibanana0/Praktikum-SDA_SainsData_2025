@@ -28,8 +28,8 @@ Materi yang akan diajarkan selama praktikum meliputi:
 
 | Pertemuan | Materi |
 | --------- | ------- |
-| Pertemuan 1 | [Introduction](Introduction.md) |
-| Pertemuan 2 | [lorem](link) |
+| Pertemuan 1 | [Introduction](0-Introduction.md) |
+| Pertemuan 2 | [1-Perkenalan](1-Perkenalan) |
 | Pertemuan 3 | [lorem](link) |
 | Pertemuan 4 | [lorem](link) |
 | Pertemuan 5 | [lorem](link) |
@@ -43,8 +43,15 @@ Materi yang akan diajarkan selama praktikum meliputi:
 | Pertemuan 13 | [lorem](link) |
 | Pertemuan 14 | [lorem](link) |
 
-### 1.2.2 - Penugasan
-
+### 1.2.2 - Penilaian
+- Pre-test 
+Dilakukan di awal kelas
+- Post-test (**Bobot: 10%**)
+Dilakukan di akhir kelas
+- Tugas (**Bobot: 50%**)
+Pengurangan nilai 3/hari
+- Responsi (**Bobot 40%**)
+Dilakukan di waktu UTS dan UAS
 
 ## 1.3 - Instalasi
 ### 1.3.1 - IDE
@@ -99,12 +106,9 @@ Apabila Anda ingin meng-*install* Java secara manual, berikut langkah-langkahnya
    - [JDK 23 Windows (x64 Installer)](https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe)
    - [JDK 23 macOS (ARM64 DMG Installer)](https://download.oracle.com/java/23/latest/jdk-23_macos-aarch64_bin.dmg)
    - [JDK 23 macOS (x64 DMG Installer)](https://download.oracle.com/java/23/latest/jdk-23_macos-x64_bin.dmg)
-   - <!-- kurang linux -->
 2.  Membuka *installer* yang sudah di-*download*
 3.  Mengikuti instruksi dari *installer*
-4.  <!-- yg windows aku gatau -->
-5.  <!-- yg linux aku gatau -->
-6.  Memeriksa apakah Java sudah ter-*install* atau belum melalui cmd atau terminal Anda dengan perintah:
+5.  Memeriksa apakah Java sudah ter-*install* atau belum melalui cmd atau terminal Anda dengan perintah:
    ```
    java --version
    ```
