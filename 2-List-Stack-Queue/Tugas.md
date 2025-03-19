@@ -3,7 +3,7 @@ Buatlah suatu program Java sederhana untuk membantu manajemen sebuah toko buku. 
 
 ### List: Katalog Buku
 - Implementasikan sebuah `List` untuk menyimpan katalog buku yang tersedia di toko.
-- Buatlah fungsi untuk menambahkan buku baru ke dalam katalog, menghapus buku berdasarkan ISBN, dan mencari buku berdasarkan judul atau penulis.
+- Buatlah fungsi untuk menambahkan buku baru ke dalam katalog, menghapus buku berdasarkan nama buku, dan mencari buku berdasarkan judul atau penulis.
 - Tampilkan seluruh katalog buku yang tersedia.
 
 ### Stack: Riwayat Transaksi
