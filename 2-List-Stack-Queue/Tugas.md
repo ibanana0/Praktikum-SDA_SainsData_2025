@@ -9,7 +9,7 @@ Buatlah suatu program Java sederhana untuk membantu manajemen sebuah toko buku. 
 ### Stack: Riwayat Transaksi
 - Gunakan Stack untuk melihat riwayat transaksi penjualan buku. Setiap transaksi mencatat buku yang terjual, jumlah, dan tanggal transaksi.
 - Implementasikan fungsi untuk menambahkan transaksi baru ke dalam riwayat dan menghapus transaksi terakhir.
-- Tampilkan riwayat transaksi terbaru hingga terlama.
+- Tampilkan riwayat transaksi.
 
 ### Queue: Antrian Pelanggan
 - Implementasikan Queue untuk mengelola antrian pelanggan yang menunggu untuk dilayani di kasir.
