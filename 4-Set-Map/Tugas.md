@@ -1,1 +1,29 @@
-## Tugas
+## Simulasi E-Commerce Sederhana dengan Map dan Set
+
+Program ini merupakan simulasi e-commerce sederhana dengan fitur utama:
+
+Database Produk
+- Tiap produk memiliki kode, nama, stok, dan harga.
+- Gunakan Map<String, Product> untuk menyimpan produk berdasarkan kode.
+- Produk tidak boleh memiliki kode yang sama.
+
+Manajemen Produk
+- Pengguna dapat menampilkan seluruh produk.
+- Pengguna dapat menambahkan produk baru (hanya jika kode belum ada).
+- Pengguna dapat menghapus produk berdasarkan kode.
+- Pengguna dapat memperbarui harga atau stok produk.
+
+Pelanggan
+- Memiliki saldo awal.
+- Bisa memilih produk yang ingin dibeli berdasarkan kode.
+- Bisa memasukkan jumlah produk yang akan dibeli.
+- Jika saldo cukup dan stok tersedia, pembelian berhasil.
+= Jika tidak cukup saldo atau stok tidak mencukupi, tampilkan pesan error.
+- Setelah pembelian, stok dan saldo harus diperbarui.
+
+Kategori Produk dengan Set
+- Tiap produk memiliki kategori (misalnya: "Elektronik", "Pakaian", "Makanan").
+- Gunakan Set<String> dalam produk untuk menyimpan beberapa kategori yang dimiliki.
+- Pengguna bisa menampilkan produk berdasarkan kategori tertentu.
+
+Buatlah program ini sekreatif mungkin menggunakan Java dengan bantuan Map dan Set.
