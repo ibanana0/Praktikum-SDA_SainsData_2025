@@ -13,14 +13,6 @@ Manajemen Produk
 - Pengguna dapat menghapus produk berdasarkan kode.
 - Pengguna dapat memperbarui harga atau stok produk.
 
-Pelanggan
-- Memiliki saldo awal.
-- Bisa memilih produk yang ingin dibeli berdasarkan kode.
-- Bisa memasukkan jumlah produk yang akan dibeli.
-- Jika saldo cukup dan stok tersedia, pembelian berhasil.
-= Jika tidak cukup saldo atau stok tidak mencukupi, tampilkan pesan error.
-- Setelah pembelian, stok dan saldo harus diperbarui.
-
 Kategori Produk dengan Set
 - Tiap produk memiliki kategori (misalnya: "Elektronik", "Pakaian", "Makanan").
 - Gunakan Set<String> dalam produk untuk menyimpan beberapa kategori yang dimiliki.
