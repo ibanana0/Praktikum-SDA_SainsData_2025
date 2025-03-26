@@ -9,8 +9,8 @@ Database Produk
 
 Manajemen Produk
 - Pengguna dapat menampilkan seluruh produk.
-- Pengguna dapat menambahkan produk baru (hanya jika kode belum ada).
-- Pengguna dapat menghapus produk berdasarkan kode.
+- Pengguna dapat menambahkan produk baru.
+- Pengguna dapat menghapus produk.
 - Pengguna dapat memperbarui harga atau stok produk.
 
 Kategori Produk dengan Set
