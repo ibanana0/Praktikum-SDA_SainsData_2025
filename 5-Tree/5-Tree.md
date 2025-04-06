@@ -89,7 +89,11 @@ Tree tersusun atas *node-node* yang dapat dikategorikan sebagai *root node*, *pa
 ## Implementasi
 > **Note**: Dalam bahasa Java, terdapat Library untuk struktur data *tree* yaitu *TreeModel*. Namun pada praktikum ini, **kita akan membuat *tree* kita sendiri dari awal**.
 
-img>
+```java
+root.insert(childNode_1);
+root.remove_with_index(0);
+root.traversal();
+```
 
 Terdapat tiga method utama dalam membuat *tree*. Ketiga *method* tersebut yaitu *insert*, *remove*, dan *traversal* (mengakses *node*). Dalam membuat *tree* dengan bahasa Java, kalian dapat mengikuti langkah-langkah berikut:
 
