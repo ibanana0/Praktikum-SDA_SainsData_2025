@@ -1,4 +1,27 @@
 # 5 - Tree
+
+- [5 - Tree](#5---tree)
+  - [Definition](#definition)
+    - [Terminologi](#terminologi)
+    - [Perbedaan dengan Struktur Data yang Lain](#perbedaan-dengan-struktur-data-yang-lain)
+  - [Kenapa menggunakan Tree?](#kenapa-menggunakan-tree)
+  - [Contoh Kasus](#contoh-kasus)
+    - [1. Sistem Perpustakaan UNS](#1-sistem-perpustakaan-uns)
+    - [2. File Explorer](#2-file-explorer)
+    - [3. DOM HTML](#3-dom-html)
+  - [Implementasi](#implementasi)
+    - [1. Meng-*import* Library ArrayList](#1-meng-import-library-arraylist)
+    - [2. Membuat Class Node](#2-membuat-class-node)
+    - [3. Membuat Constructor Node pada Class Node](#3-membuat-constructor-node-pada-class-node)
+    - [4. Membuat Method "insert()"](#4-membuat-method-insert)
+    - [5. Membuat Method "remove()"](#5-membuat-method-remove)
+    - [6. Membuat Method "\_traversal()"](#6-membuat-method-_traversal)
+    - [7. Membuat Method "traversal()"](#7-membuat-method-traversal)
+  - [Contoh](#contoh)
+  - [Tambahan](#tambahan)
+    - [Traversal Post-Order](#traversal-post-order)
+
+
 ## Definition
 Tree merupakan konsep Struktur Data non-linear di mana data-data di dalamnya saling berhubungan (*linked*) dan disusun secara hierarki (bertingkat). Tree biasanya digunakan untuk menyimpan data yang memiliki hubungan secara hierarki antara satu dengan yang lainnya. Tree mengambil konsep dari sebuah pohon yang terbalik dengan ilustrasi sebagai berikut:
 
