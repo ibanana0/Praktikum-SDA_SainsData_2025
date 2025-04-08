@@ -30,13 +30,13 @@ Tree merupakan konsep Struktur Data non-linear di mana data-data di dalamnya sal
 
 ### Terminologi
 Tree tersusun atas *node-node* yang dapat dikategorikan sebagai *root node*, *parent node*, *child node*, dan *leaf*. Adapun penjelasan dari beberapa terminologi-terminologi lain pada tree yaitu:
-- **Node**, merupakan data yang dihubungkan. Pada ilustrasi di atas, contoh *node* yaitu A, B, C, D, ... dan P
+- **Node**, merupakan data yang dihubungkan. Pada ilustrasi di atas, contoh *node* yaitu A, B, C, D, ... dan O
 - **Edge**, merupakan hubungan di antara *node*. Pada ilustrasi di atas, contoh *edge* yaitu a, b, c, d, ... dan n
 - **Root Node**, merupakan *node* pertama atau *node* paling atas dari sebuah *tree*. Pada ilustrasi di atas, *root node* merupakan *node* A
 - **Parent Node**, adalah semua *node* yang memiliki *child node*. Pada ilustrasi di atas, *parent node* yaitu *node* A, B, C, D, E, F, G, H, dan I
-- **Child Node**, adalah semua *node* yang dimiliki oleh *parent node*. Pada konsep *tree*, *child node* tidak dibatasi jumlahnya. Contoh *child node* pada ilustrasi di atas yaitu *node* B, C, D, E, F, G, H, I, K, L, M, N, O, dan P
-- **Leaf Node**, adalah semua *node* yang tidak memiliki *child node* (berada di paling bawah). Pada ilustrasi di atas *leaf node* yaitu *node* K, L, M, N, O, dan P
-- **Sub Tree**, adalah sebagian *tree* yang lebih kecil yang berada di dalam *tree* yang lebih besar. Contoh *sub tree* pada ilustrasi di atas yaitu *tree* dari *node* B, E, F, dan K.
+- **Child Node**, adalah semua *node* yang dimiliki oleh *parent node*. Pada konsep *tree*, *child node* tidak dibatasi jumlahnya. Contoh *child node* pada ilustrasi di atas yaitu *node* B, C, D, E, F, G, H, I, K, L, M, N, dan O
+- **Leaf Node**, adalah semua *node* yang tidak memiliki *child node* (berada di paling bawah). Pada ilustrasi di atas *leaf node* yaitu *node* J, K, L, M, N, dan O
+- **Sub Tree**, adalah sebagian *tree* yang lebih kecil yang berada di dalam *tree* yang lebih besar. Contoh *sub tree* pada ilustrasi di atas yaitu *tree* dari *node* B, E, F, dan J.
 - **Size Tree**, adalah jumlah semua *node* di dalam *tree*. Pada ilustrasi di atas, *size tree*-nya yaitu 15
 - **Height of Tree**, adalah ketinggian *tree* dihitung dari *leaf node* hingga *root node*. *Height of Tree* juga dapat diketahui dengan menghitung panjang *edge* dari *leaf node* hingga *root node*. Pada ilustrasi di atas, *height of tree*-nya yaitu 3
 - **Depth of Tree**, adalah kedalaman *tree* dihitung dari *root node* hingga *leaf node*. *Depth of Tree* juga dapat diketahui dengan menghitung panjang *edge* dari *root node* hingga *leaf node*. Pada ilustrasi di atas, *depth of tree*-nya yaitu 3
