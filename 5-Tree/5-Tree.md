@@ -25,7 +25,7 @@
 ## Definition
 Tree merupakan konsep Struktur Data non-linear di mana data-data di dalamnya saling berhubungan (*linked*) dan disusun secara hierarki (bertingkat). Tree biasanya digunakan untuk menyimpan data yang memiliki hubungan secara hierarki antara satu dengan yang lainnya. Tree mengambil konsep dari sebuah pohon yang terbalik dengan ilustrasi sebagai berikut:
 
-<img src="Tree_example_1_1.png">
+<img src="">
 <hr>
 
 ### Terminologi
