@@ -1,4 +1,12 @@
 # Binary Search Tree
+- [Binary Search Tree](#binary-search-tree)
+  - [Pengertian](#pengertian)
+  - [Kelebihan](#kelebihan)
+  - [Kekurangan](#kekurangan)
+  - [Solusi dari Kekurangan](#solusi-dari-kekurangan)
+  - [Contoh](#contoh)
+  - [Implementasi](#implementasi)
+
 ![Binary Search Tree](Binary-Search-Tree.png)
 ## Pengertian
 Binary Search Tree merupakan konsep Binary Tree yang memiliki aturan bahwa left child memiliki value yang lebih kecil daripada parent node-nya sedangkan right child memiliki value yang lebih besar daripada parent node-nya. Hal ini menyebabkan tree memiliki struktur data yang berurutan.
