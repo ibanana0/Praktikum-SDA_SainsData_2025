@@ -1,4 +1,15 @@
 # AVL Tree
+- [AVL Tree](#avl-tree)
+  - [Pengertian](#pengertian)
+  - [Aturan](#aturan)
+  - [Algoritma](#algoritma)
+    - [Insertion](#insertion)
+    - [Deletion](#deletion)
+  - [Kelebihan](#kelebihan)
+  - [Kekurangan](#kekurangan)
+  - [Contoh](#contoh)
+  - [Implementasi](#implementasi)
+
 ## Pengertian
 AVL Tree adalah Binary Tree yang dapat melakukan *self balancing* dengan meninjau selisih *height* subtree yaitu **harus tidak lebih dari 1**. Proses *self balancing* dilakukan dengan melakukan *rotating*.
 
