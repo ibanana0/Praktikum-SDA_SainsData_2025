@@ -29,7 +29,7 @@ Binary Search Tree merupakan konsep Binary Tree yang memiliki aturan bahwa left 
 - Program pencarian kata di dalam kamus
 ## Implementasi
 ```java
-kodinganclass Node {
+class Node {
     int value;
     Node left, right;
 
