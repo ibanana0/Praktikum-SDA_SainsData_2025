@@ -29,6 +29,7 @@ Tree yang memiliki children node dengan jumlah maksimal dua buah di mana node-no
 - Menjadi landasan untuk algoritma **Binary Search Tree**, **AVL Tree** dan, **RB Tree**
 
 ## Kekurangan
+- Tidak memperdulikan urutan
 - Belum bisa melakukan *sorting*
 - Kecepatan operasi *insert*, *delete*, dan pencarian atau pengaksesan elemen adalah O(n), karena untuk menemukan posisi elemen yang dicari diperlukan iterasi dengan menelusuri semua *node* elemen di dalam *tree*
 
