@@ -57,26 +57,38 @@ class Node {
 class BinaryTree {
     Node root;
 
-    // Menambahkan data (insert)
-    Node insert(Node root, int value) {
-        if (root == null) {
-            return new Node(value);
-        }
-
-        if (value < root.value) {
-            root.left = insert(root.left, value);
-        } else {
-            root.right = insert(root.right, value);
-        }
-
-        return root;
-    }
-
+    // Tambahkan node secara level-order
     void add(int value) {
-        root = insert(root, value);
+        Node newNode = new Node(value);
+
+        if (root == null) {
+            root = newNode;
+            return;
+        }
+
+        java.util.Queue<Node> queue = new java.util.LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
+
+            if (current.left == null) {
+                current.left = newNode;
+                return;
+            } else {
+                queue.add(current.left);
+            }
+
+            if (current.right == null) {
+                current.right = newNode;
+                return;
+            } else {
+                queue.add(current.right);
+            }
+        }
     }
 
-    // Traversal - InOrder (kiri - root - kanan)
+    // Traversal InOrder
     void inOrder(Node root) {
         if (root != null) {
             inOrder(root.left);
@@ -85,7 +97,7 @@ class BinaryTree {
         }
     }
 
-    // Traversal - PreOrder (root - kiri - kanan)
+    // Traversal PreOrder
     void preOrder(Node root) {
         if (root != null) {
             System.out.print(root.value + " ");
@@ -94,7 +106,7 @@ class BinaryTree {
         }
     }
 
-    //Traversal - PostOrder (kiri - kanan - root)
+    // Traversal PostOrder
     void postOrder(Node root) {
         if (root != null) {
             postOrder(root.left);
@@ -103,47 +115,84 @@ class BinaryTree {
         }
     }
 
-    // Cari elemen
-    boolean search(Node root, int target) {
+    // Search value dalam tree (BFS)
+    boolean search(int target) {
         if (root == null) return false;
-        if (root.value == target) return true;
-        if (target < root.value)
-            return search(root.left, target);
-        else
-            return search(root.right, target);
-    }
 
-    // Hapus elemen
-    Node delete(Node root, int value) {
-        if (root == null) return null;
+        java.util.Queue<Node> queue = new java.util.LinkedList<>();
+        queue.add(root);
 
-        if (value < root.value) {
-            root.left = delete(root.left, value);
-        } else if (value > root.value) {
-            root.right = delete(root.right, value);
-        } else {
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
 
-            // node dengan 1 anak atau tidak ada anak
-            if (root.left == null) return root.right;
-            else if (root.right == null) return root.left;
+            if (current.value == target) return true;
 
-            // node dengan 2 anak
-            root.value = minValue(root.right);
-            root.right = delete(root.right, root.value);
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
         }
-        return root;
+        
+        return false;
     }
 
-    int minValue(Node root) {
-        int min = root.value;
-        while (root.left != null) {
-            min = root.left.value;
-            root = root.left;
+    // Delete node dengan value tertentu
+    void delete(int value) {
+        if (root == null) return;
+
+        if (root.left == null && root.right == null) {
+            if (root.value == value) root = null;
+            return;
         }
-        return min;
+
+        java.util.Queue<Node> queue = new java.util.LinkedList<>();
+        queue.add(root);
+
+        Node targetNode = null;
+        Node current = null;
+
+        while (!queue.isEmpty()) {
+            current = queue.poll();
+
+            if (current.value == value) targetNode = current;
+
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
+        }
+
+        if (targetNode != null) {
+            int deepestValue = current.value;
+            deleteDeepest(current);
+            targetNode.value = deepestValue;
+        }
     }
 
-    // Fungsi bantu
+    // Menghapus node terdalam
+    void deleteDeepest(Node delNode) {
+        java.util.Queue<Node> queue = new java.util.LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
+
+            if (current.left != null) {
+                if (current.left == delNode) {
+                    current.left = null;
+                    return;
+                } else {
+                    queue.add(current.left);
+                }
+            }
+
+            if (current.right != null) {
+                if (current.right == delNode) {
+                    current.right = null;
+                    return;
+                } else {
+                    queue.add(current.right);
+                }
+            }
+        }
+    }
+
     void printInOrder() {
         System.out.print("InOrder Traversal: ");
         inOrder(root);
@@ -163,26 +212,21 @@ class BinaryTree {
     }
 
     boolean contains(int value) {
-        return search(root, value);
-    }
-
-    void remove(int value) {
-        root = delete(root, value);
+        return search(value);
     }
 }
 
-// Main program
+// Main Program
 public class BabBinaryTree {
     public static void main(String[] args) {
-        //Inisialisai objek tree
         BinaryTree tree = new BinaryTree();
 
-        // Tambahkan data
-        tree.add(7);
-        tree.add(4);
-        tree.add(9);
-        tree.add(1);
-        tree.add(5);
+        // Tambah node
+        tree.add(7);  // root
+        tree.add(4);  // left of root
+        tree.add(9);  // right of root
+        tree.add(1);  // left of 4
+        tree.add(5);  // right of 4
 
         // Tampilkan traversal
         tree.printInOrder();
@@ -190,14 +234,14 @@ public class BabBinaryTree {
         tree.printPostOrder();
 
         // Cari data
-        System.out.println("Cari 5? " + tree.contains(5));  
+        System.out.println("Cari 5? " + tree.contains(5));
         System.out.println("Cari 10? " + tree.contains(10));
 
-        // Hapus data
-        tree.remove(4);
-        tree.printInOrder();  
+        // Hapus node
+        System.out.println("Hapus 4...");
+        tree.delete(4);
+        tree.printInOrder();
     }
 }
-
 ```
 
