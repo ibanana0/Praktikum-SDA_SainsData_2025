@@ -31,7 +31,8 @@ Konsep indexing dan tabel *hash* pada Hashing mirip seperti halnya pada Array. H
 2. Membutuhkan prefix searching (menggunakan konsep trie)
    
 ## Jenis Hashing
-1. Hash Set → menyimpan data yang unik (tidak boleh ada duplicate)
+### Hash Set 
+→ menyimpan data yang unik (tidak boleh ada duplicate)
 Penjelasan:
 ```java
 HashMap<K,V> <nama_variabel>
@@ -39,14 +40,16 @@ HashMap<K,V> <nama_variabel>
    - Dapat menyimpan NULL
    - Tidak boleh ada data duplikat 
    - Tidak thread safe
-2. Hash Map → menyimpan data berupa pasangan key-value 
+### Hash Map 
+→ menyimpan data berupa pasangan key-value 
 Penjelasan
 ```java
 HashSet<E> <nama_variabel>
 ```
    - Dapat menyimpan satu buah key pada pasangan key-value yang bernilai NULL dan banyak buah value yang bernilai NULL
    - Tidak thread safe
-3. Hash Table → menyimpan data berupa pasangan key-value
+### Hash Table 
+→ menyimpan data berupa pasangan key-value
 ```java
 Hashtable<K,V> <nama_variabel>
 ```
