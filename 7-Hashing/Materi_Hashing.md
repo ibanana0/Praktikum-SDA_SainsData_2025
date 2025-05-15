@@ -57,7 +57,7 @@ Hashtable<K,V> <nama_variabel>
    - Thread safe
 
 ## Collision Handling
-1. Chaining
+### Chaining
 Ketika ditemukan data yang memiliki key yang ber-index sama, maka akan dibuat list yang dimasukan di baris tabel tersebut. List dapat berupa linked list, BST, atau self balancing tree
 
    1. Kelebihan
@@ -74,7 +74,7 @@ Ketika ditemukan data yang memiliki key yang ber-index sama, maka akan dibuat li
       - Digunakan pada data yang berubah secara dinamis
       - Jika memerlukan yang simpel, cepat, tetapi tidak memperdulikan ruang penyimpanan
 
-1. Linear Addressing
+### Linear Addressing
 Ketika ditemukan data yang memiliki key yang ber-index sama, maka data akan dioper ke baris berikutnya dan seterusnya
    1. Kelebihan
       - Tabel dapat digunakan secara efektif (tidak ada baris yang kosong)
