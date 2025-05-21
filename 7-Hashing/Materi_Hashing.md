@@ -88,3 +88,5 @@ Ketika ditemukan data yang memiliki key yang ber-index sama, maka data akan diop
 ## Tambahan
 ### Load Factor
 Jika jumlah data pada tabel sudah mencapai pada kapasitas tertentu (load factor) maka baris pada tabel akan bertambah
+
+<!-- coba -->
