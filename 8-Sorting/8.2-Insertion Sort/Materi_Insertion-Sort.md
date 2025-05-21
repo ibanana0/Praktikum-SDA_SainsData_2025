@@ -15,6 +15,7 @@ Isertion Sort adalah algoritma *sorting* yang memeriksa apakah semua elemen di s
 Proses pemeriksaan akan dilakukan secara berulang-ulang dari elemen paling awal hingga elemen paling akhir. Hal ini memungkinkan semua elemen-elemen terurut di urutan yang tepat.
 ## Mekanik ⚙️
 ![Insertion Sort Example](Assets/insertion-sort_example-1.svg)
+
 ![Insertion Sort Gif](Assets/insertion-sort.gif)
 1. Mengambil elemen dari kiri
 2. Memeriksa sebelah kiri elemen yang dipilih

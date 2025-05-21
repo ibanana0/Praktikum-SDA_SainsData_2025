@@ -16,6 +16,7 @@ Proses pemeriksaan akan dilakukan secara berulang-ulang dari elemen paling awal 
 
 ## Mekanik ⚙️
 ![Bubble Sort Example](Assets/bubble-sort_example-1.svg)
+
 ![Bubble Sort](Assets/bubble-sort.gif)
 
 1. Membandingkan elemen dari kiri ke elemen tepat setelahnya:
