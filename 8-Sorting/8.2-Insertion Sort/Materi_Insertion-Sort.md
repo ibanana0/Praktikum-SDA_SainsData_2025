@@ -42,4 +42,31 @@ Proses pemeriksaan akan dilakukan secara berulang-ulang dari elemen paling awal 
 - Tidak cocok untuk dataset yang banyak
 ## Implementasi 
 ```java
+public class InsertSort {
+    static void InsertSort(int array[]) {
+        int size = array.length;
+        for (int step = 1; step < size; step++) {
+            int key = array[step];
+            int j = step - 1;
+
+            while(j >= 0  && key > array[j]) {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = key;        
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int array[] = {9,1,8,2,7,3,6,4,5};
+
+        InsertSort(array);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    
+    }
+}
 ```
