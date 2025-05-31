@@ -30,7 +30,7 @@ Pada dua bagian tersebut, kemudian dilakukan pengurutan lagi menggunakan Quick S
         >3. Menggeser indeks *j* ke tepat setelahnya ***(j + 1)***
    2. Melakukan pemeriksaan secara berulang hingga indeks *j* mencapai indeks *pivot*. Jika *j* mencapai indeks *pivot*:
       1. Menggeser indeks *i* ***(i + 1)***
-      2. Melakukan *swapping* antara *i* dan *j*
+      2. Melakukan *swapping* antara *i* dan *pivot*
       3. Memposisikan pivot di ***tempatnya***
 4. Mengulangi langkah ke-1 ke kedua bagian *array* yaitu:
    - Bagian yang lebih kecil daripada *pivot* dan 
